@@ -1,0 +1,50 @@
+Epoch: 0002
+ACC=0.370015, f1_macro=0.351024, precision_macro=0.356692, recall_macro=0.349703, f1_micro=0.370015, precision_micro=0.370015, recall_micro=0.370015, NMI=0.179400, ADJ_RAND_SCORE=0.122210
+Epoch: 0004
+ACC=0.466027, f1_macro=0.468810, precision_macro=0.498814, recall_macro=0.451452, f1_micro=0.466027, precision_micro=0.466027, recall_micro=0.466027, NMI=0.321913, ADJ_RAND_SCORE=0.221066
+Epoch: 0006
+ACC=0.491137, f1_macro=0.494586, precision_macro=0.569200, recall_macro=0.511866, f1_micro=0.491137, precision_micro=0.491137, recall_micro=0.491137, NMI=0.352236, ADJ_RAND_SCORE=0.223397
+Epoch: 0008
+ACC=0.646972, f1_macro=0.626921, precision_macro=0.647860, recall_macro=0.638614, f1_micro=0.646972, precision_micro=0.646972, recall_micro=0.646972, NMI=0.446374, ADJ_RAND_SCORE=0.411299
+Epoch: 0010
+ACC=0.649557, f1_macro=0.634370, precision_macro=0.651110, recall_macro=0.648188, f1_micro=0.649557, precision_micro=0.649557, recall_micro=0.649557, NMI=0.440732, ADJ_RAND_SCORE=0.408299
+Epoch: 0012
+ACC=0.641433, f1_macro=0.628711, precision_macro=0.642729, recall_macro=0.648108, f1_micro=0.641433, precision_micro=0.641433, recall_micro=0.641433, NMI=0.426455, ADJ_RAND_SCORE=0.385607
+Epoch: 0014
+ACC=0.639956, f1_macro=0.627122, precision_macro=0.635546, recall_macro=0.646989, f1_micro=0.639956, precision_micro=0.639956, recall_micro=0.639956, NMI=0.424802, ADJ_RAND_SCORE=0.388137
+Epoch: 0016
+ACC=0.659158, f1_macro=0.640855, precision_macro=0.664354, recall_macro=0.661567, f1_micro=0.659158, precision_micro=0.659158, recall_micro=0.659158, NMI=0.434086, ADJ_RAND_SCORE=0.404350
+Epoch: 0018
+ACC=0.650665, f1_macro=0.634986, precision_macro=0.659645, recall_macro=0.657589, f1_micro=0.650665, precision_micro=0.650665, recall_micro=0.650665, NMI=0.445125, ADJ_RAND_SCORE=0.401712
+Epoch: 0020
+ACC=0.619645, f1_macro=0.614354, precision_macro=0.633991, recall_macro=0.627162, f1_micro=0.619645, precision_micro=0.619645, recall_micro=0.619645, NMI=0.426763, ADJ_RAND_SCORE=0.377976
+Epoch: 0022
+ACC=0.615953, f1_macro=0.611524, precision_macro=0.627924, recall_macro=0.624036, f1_micro=0.615953, precision_micro=0.615953, recall_micro=0.615953, NMI=0.421324, ADJ_RAND_SCORE=0.375798
+Epoch: 0024
+ACC=0.637740, f1_macro=0.628620, precision_macro=0.640359, recall_macro=0.643493, f1_micro=0.637740, precision_micro=0.637740, recall_micro=0.637740, NMI=0.426051, ADJ_RAND_SCORE=0.386777
+Epoch: 0026
+ACC=0.570532, f1_macro=0.549966, precision_macro=0.575826, recall_macro=0.558639, f1_micro=0.570532, precision_micro=0.570532, recall_micro=0.570532, NMI=0.425545, ADJ_RAND_SCORE=0.340869
+Epoch: 0028
+ACC=0.543575, f1_macro=0.543294, precision_macro=0.578778, recall_macro=0.538220, f1_micro=0.543575, precision_micro=0.543575, recall_micro=0.543575, NMI=0.410736, ADJ_RAND_SCORE=0.333375
+Epoch: 0030
+ACC=0.550960, f1_macro=0.546110, precision_macro=0.579131, recall_macro=0.541879, f1_micro=0.550960, precision_micro=0.550960, recall_micro=0.550960, NMI=0.415450, ADJ_RAND_SCORE=0.332109
+Epoch: 0032
+ACC=0.543944, f1_macro=0.544689, precision_macro=0.578863, recall_macro=0.534868, f1_micro=0.543944, precision_micro=0.543944, recall_micro=0.543944, NMI=0.403507, ADJ_RAND_SCORE=0.325912
+Epoch: 0034
+ACC=0.566839, f1_macro=0.584455, precision_macro=0.608953, recall_macro=0.608181, f1_micro=0.566839, precision_micro=0.566839, recall_micro=0.566839, NMI=0.425111, ADJ_RAND_SCORE=0.336314
+Epoch: 0036
+ACC=0.569055, f1_macro=0.580203, precision_macro=0.601590, recall_macro=0.606225, f1_micro=0.569055, precision_micro=0.569055, recall_micro=0.569055, NMI=0.406877, ADJ_RAND_SCORE=0.320475
+Epoch: 0038
+ACC=0.563885, f1_macro=0.558329, precision_macro=0.587927, recall_macro=0.551404, f1_micro=0.563885, precision_micro=0.563885, recall_micro=0.563885, NMI=0.406244, ADJ_RAND_SCORE=0.330969
+Epoch: 0040
+ACC=0.567947, f1_macro=0.583473, precision_macro=0.605250, recall_macro=0.605737, f1_micro=0.567947, precision_micro=0.567947, recall_micro=0.567947, NMI=0.410761, ADJ_RAND_SCORE=0.322252
+Epoch: 0042
+ACC=0.566839, f1_macro=0.584365, precision_macro=0.610154, recall_macro=0.604567, f1_micro=0.566839, precision_micro=0.566839, recall_micro=0.566839, NMI=0.416649, ADJ_RAND_SCORE=0.327048
+Epoch: 0044
+ACC=0.569793, f1_macro=0.583656, precision_macro=0.607521, recall_macro=0.599120, f1_micro=0.569793, precision_micro=0.569793, recall_micro=0.569793, NMI=0.415601, ADJ_RAND_SCORE=0.336193
+Epoch: 0046
+ACC=0.692393, f1_macro=0.670972, precision_macro=0.702991, recall_macro=0.687448, f1_micro=0.692393, precision_micro=0.692393, recall_micro=0.692393, NMI=0.475976, ADJ_RAND_SCORE=0.452473
+Epoch: 0048
+ACC=0.555022, f1_macro=0.560960, precision_macro=0.584504, recall_macro=0.584415, f1_micro=0.555022, precision_micro=0.555022, recall_micro=0.555022, NMI=0.398366, ADJ_RAND_SCORE=0.319799
+Epoch: 0050
+ACC=0.594904, f1_macro=0.599531, precision_macro=0.633483, recall_macro=0.620395, f1_micro=0.594904, precision_micro=0.594904, recall_micro=0.594904, NMI=0.423043, ADJ_RAND_SCORE=0.337823
