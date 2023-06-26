@@ -16,18 +16,22 @@ FLAGS = flags.FLAGS
 class Clustering_Runner():
     def __init__(self, settings):
 
-        print("Clustering on dataset: %s, model: %s, number of iteration: %3d" % (settings['data_name'], settings['model'], settings['iterations']))
+        print("Clustering on dataset: %s, model: %s, number of iteration: %3d" % (settings['data_name'], settings['model'], settings['iterations'], settings['self.n_hop_enable']))
 
         self.data_name = settings['data_name']
         self.iteration =settings['iterations']
         self.model = settings['model']
         self.n_clusters = settings['clustering_num']
+        self.n_hop_enable = settings['n_hop_enable']                      # Author: Tonni
+        self.hop_count = settings['hop_count']                            # Author: Tonni
+        self.pred_column = settings['pred_column']                        # Author: Tonni
+
 
     def erun(self):
         model_str = self.model
 
         # formatted data
-        feas = format_data(self.data_name)
+        feas = format_data(self.data_name, self.n_hop_enable, self.hop_count)             # Updated with self.n_hop_enable and hop_count
 
         # Define placeholders
         placeholders = get_placeholder(feas['adj'])

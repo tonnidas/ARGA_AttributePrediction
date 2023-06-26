@@ -19,11 +19,15 @@ class Link_pred_Runner():
         self.data_name = settings['data_name']
         self.iteration = settings['iterations']
         self.model = settings['model']
+        self.n_hop_enable = settings['n_hop_enable']                      # Author: Tonni
+        self.hop_count = settings['hop_count']                            # Author: Tonni
+        self.pred_column = settings['pred_column']                        # Author: Tonni
+        
 
     def erun(self):
         model_str = self.model
         # formatted data
-        feas = format_data(self.data_name)
+        feas = format_data(self.data_name, self.n_hop_enable, self.hop_count, self.pred_column)             # Updated with self.n_hop_enable and hop_count
 
         # Define placeholders
         placeholders = get_placeholder(feas['adj'])

@@ -39,14 +39,14 @@ def convert(numNodes, adj):
                     adjList[i].append(j)
     return adjList
 
-def addHopFeatures(features, adj):
+def addHopFeatures(features, adj, hop_count):
     print('features_n_hop start')
 
     numNodes = features.shape[0]
 
     adjList = convert(numNodes, adj)
 
-    n_hop_neighbors = 1
+    n_hop_neighbors = hop_count
 
     Vertices_attributes_oneHot = pd.DataFrame.sparse.from_spmatrix(features)
 

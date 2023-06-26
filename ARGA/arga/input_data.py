@@ -59,7 +59,7 @@ def load_data(dataset):
     adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
 
     # Labels are cluster identity of each feature vector or row
-    labels = np.vstack((ally, ty)) # labels = [[0 0 0 0 1 0 0],[0 0 0 1 0 0 0], ..., [0 0 0 0 1 0 0]], size of labels = 2708
+    labels = np.vstack((ally, ty)) # labels = [[0 0 0 0 1 0 0],[0 0 0 1 0 0 0], ..., [0 0 0 0 1 0 0]], size of labels for cora = 2708
     labels[test_idx_reorder, :] = labels[test_idx_range, :] # Keeping labels array in ascending order
 
     idx_test = test_idx_range.tolist() # List of all test nodes (1708, ... , 2707)

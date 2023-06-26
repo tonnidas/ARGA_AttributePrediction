@@ -64,20 +64,19 @@ def get_model(model_str, placeholders, num_features, num_nodes, features_nonzero
 #     test_edges = a list of pairs containing randomly selected 10% edges, one-directional, type: list of list
 #     test_edges_false = random unique fake edges of same size of test_edges that does not contain in the whole edge dataset
 #     adj_orig = TODO adj metrics without self loop and zero rows, for cora size is (2708, 2708) since it does not have any all-zero row
-def format_data(data_name, n_hop_enable, hop_count, pred_column):
+def format_data_attr(data_name, n_hop_enable, hop_count):
     # Load data
-    adj, features, y_test, tx, ty, test_maks, true_labels = load_data(data_name)
+    adj, features, y_test, tx, ty, test_maks, true_labels = load_data(data_name)          # Not using y_test & test_maks anywhere.     Author : Tonni
 
-    # If pred_column is not None, it means the task is attribute_prediction                                 # Author: Tonni
-    # So, we seperate a column that we will predict from getting embedded to prevent bias                   # Author: Tonni
-    # Drop the column from the features matrix that you want to predict                                     # Author: Tonni
-    y_tobe_predicted = None
-    if (pred_column != None):                                                                               # Author: Tonni
-        f = features.toarray()
-        # I have to save the deleted column somewhere to use it during regressive training for attribute prediction
-        y_tobe_predicted = f[:, pred_column]     # type = array
-        f = np.delete(f, pred_column, 1)
-        features = sparse.csr_matrix(f)
+    # Drop the column that you want to predict from the feature matrix
+    f = features.toarray()
+    f = np.delete(f, 7, 1)
+    features = sparse.csr_matrix(f)
+    # print(features)
+    # Seperate the column to be predicted from features                                      Author : Tonni
+    # col_list = [5,6]     
+    # print(features(0)[:,col_list])     # i can use features.getcol(17) to a copy of column j of the matrix, as an (m x 1) sparse matrix (column vector).
+    return
 
 
     # Apply method to get information till n_hop if "n_hop_enable" is true
@@ -111,7 +110,7 @@ def format_data(data_name, n_hop_enable, hop_count, pred_column):
 
     adj_label = adj_train + sp.eye(adj_train.shape[0]) # sp.eye = Sparse matrix with ones on diagonal
     adj_label = sparse_to_tuple(adj_label) # sparse_to_tuple return coordinates, values, shapes
-    items = [adj, num_features, num_nodes, features_nonzero, pos_weight, norm, adj_norm, adj_label, features, true_labels, train_edges, val_edges, val_edges_false, test_edges, test_edges_false, adj_orig, y_tobe_predicted]
+    items = [adj, num_features, num_nodes, features_nonzero, pos_weight, norm, adj_norm, adj_label, features, true_labels, train_edges, val_edges, val_edges_false, test_edges, test_edges_false, adj_orig]
     feas = {}
     for item in items:
         # item_name = [ k for k,v in locals().iteritems() if v == item][0]

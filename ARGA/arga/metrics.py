@@ -5,6 +5,10 @@ from sklearn import metrics
 from munkres import Munkres, print_matrix
 import numpy as np
 
+def attrpred_metrics_classi(y_test, y_pred):                              # Author: Tonni 
+    roc = metrics.roc_auc_score(y_test, y_pred)
+    return roc, 0
+
 class linkpred_metrics():
     def __init__(self, edges_pos, edges_neg):
         self.edges_pos = edges_pos
